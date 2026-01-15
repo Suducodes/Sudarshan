@@ -90,7 +90,7 @@ const DNAHelix = () => {
 
 export const ThreeBackground: React.FC = () => {
   return (
-    <div className="relative h-[90vh] w-full z-0 pointer-events-none opacity-60">
+    <div className="fixed inset-0 z-0 pointer-events-none opacity-60">
       <Canvas camera={{ position: [0, 0, 10], fov: 45 }}>
         <fog attach="fog" args={['#050505', 5, 20]} />
         <DNAHelix />
