@@ -52,7 +52,7 @@ const App: React.FC = () => {
           >
             {/* The image should be a transparent PNG. Using a placeholder here. */}
             <img 
-               src="https://placehold.co/500x800/png?text=Photo+Here" 
+               src="/images/my-photo.png" 
                alt="Sudarshan Vasanthakumar" 
                className="h-full w-auto object-contain drop-shadow-[0_0_60px_rgba(0,243,255,0.25)]"
             />
