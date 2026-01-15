@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
-import { Navbar } from './components/Navbar';
-import { ThreeBackground } from './components/ThreeBackground';
-import { Section } from './components/Section';
-import { ProjectCard } from './components/ProjectCard';
-import { RESEARCH_PROJECTS, TECH_PROJECTS, SKILLS, EDUCATION } from './constants';
+import { Navbar } from './components/Navbar.tsx';
+import { ThreeBackground } from './components/ThreeBackground.tsx';
+import { Section } from './components/Section.tsx';
+import { ProjectCard } from './components/ProjectCard.tsx';
+import { RESEARCH_PROJECTS, TECH_PROJECTS, SKILLS, EDUCATION } from './constants.ts';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { ArrowRight, Mail, FileText, Award, Crosshair } from 'lucide-react';
 
