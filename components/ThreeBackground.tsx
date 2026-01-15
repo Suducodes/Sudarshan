@@ -56,10 +56,10 @@ const DNAHelix = () => {
   if (!ref.current) return;
 
   // Continuous rotation (spin)
-  ref.current.rotation.y += delta * 0.25;
+  ref.current.rotation.y += delta * 0.10;
 
   // Fixed diagonal slant (THIS creates the look you showed)
-  ref.current.rotation.x = Math.PI / 4; // forward tilt
+  ref.current.rotation.x = Math.PI / 1; // forward tilt
   ref.current.rotation.z = Math.PI / 6; // diagonal tilt
 
   // Gentle floating (optional but nice)
