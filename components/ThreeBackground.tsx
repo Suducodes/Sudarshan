@@ -53,12 +53,20 @@ const DNAHelix = () => {
   }, []);
 
   useFrame((state, delta) => {
-    if (ref.current) {
-      ref.current.rotation.y += delta * 0.1; // Slow rotation
-      // Gentle floating wave
-      ref.current.position.y = Math.sin(state.clock.elapsedTime * 0.5) * 0.2;
-    }
-  });
+  if (!ref.current) return;
+
+  // Continuous rotation (spin)
+  ref.current.rotation.y += delta * 0.25;
+
+  // Fixed diagonal slant (THIS creates the look you showed)
+  ref.current.rotation.x = Math.PI / 4; // forward tilt
+  ref.current.rotation.z = Math.PI / 6; // diagonal tilt
+
+  // Gentle floating (optional but nice)
+  ref.current.position.y =
+    Math.sin(state.clock.elapsedTime * 0.5) * 0.2;
+});
+
 
   return (
     <points ref={ref}>
