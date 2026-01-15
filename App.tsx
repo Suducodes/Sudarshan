@@ -55,7 +55,7 @@ const App: React.FC = () => {
             <img 
                src={myPhoto}
                alt="Sudarshan Vasanthakumar" 
-               className="h-full w-auto object-contain drop-shadow-[0_0_60px_rgba(0,243,255,0.25)] scale-110 origin-bottom"
+               className="h-full w-auto object-contain drop-shadow-[0_0_60px_rgba(0,243,255,0.25)] scale-200 origin-bottom"
             />
             
             {/* 3D floating badge element in front of image */}
