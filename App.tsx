@@ -32,7 +32,7 @@ const App: React.FC = () => {
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
-            className="col-span-1 lg:col-span-4 text-center lg:text-left z-0"
+            className="col-span-1 lg:col-span-4 text-center lg:text-left z-30"
           >
              <h2 className="text-xl md:text-2xl font-light text-brand-primary mb-2 tracking-widest uppercase shadow-brand-primary/50 drop-shadow-lg">
                 Sudarshan V.
