@@ -45,19 +45,23 @@ const App: React.FC = () => {
           </motion.div>
 
           {/* Center Column: Cutout Image (No Box) */}
-          <motion.div 
+         <motion.div 
              initial={{ opacity: 0, y: 50 }}
              animate={{ opacity: 1, y: 0 }}
              transition={{ duration: 0.8, delay: 0.2 }}
-             className="col-span-1 lg:col-span-4 flex justify-center items-end h-[70vh] lg:h-[100vh] relative z-10"
+             // OPTIONAL: Change h-[70vh] to h-[80vh] to make the container taller on mobile
+             className="col-span-1 lg:col-span-4 flex justify-center items-end h-[80vh] lg:h-[100vh] relative z-10"
           >
             {/* The image should be a transparent PNG. Using a placeholder here. */}
             <img 
                src={myPhoto}
                alt="Sudarshan Vasanthakumar" 
-               className="h-full w-auto object-contain drop-shadow-[0_0_60px_rgba(0,243,255,0.25)] scale-400 origin-bottom"
+               // CHANGE: Replaced 'scale-400' with 'scale-[1.35]' (135% size)
+               // You can adjust [1.35] to [1.5] or [1.2] to fit your preference
+               className="h-full w-auto object-contain drop-shadow-[0_0_60px_rgba(0,243,255,0.25)] scale-[1.35] origin-bottom"
             />
-            
+
+           
             {/* 3D floating badge element in front of image */}
             <div className="absolute bottom-10 right-0 glass-panel p-4 rounded-xl border border-brand-primary/30 shadow-[0_0_30px_rgba(0,243,255,0.2)] animate-float hidden md:block backdrop-blur-xl">
                 <p className="text-xs font-bold text-brand-primary uppercase">Status</p>
