@@ -58,7 +58,7 @@ const App: React.FC = () => {
                alt="Sudarshan Vasanthakumar" 
                // CHANGE: Replaced 'scale-400' with 'scale-[1.35]' (135% size)
                // You can adjust [1.35] to [1.5] or [1.2] to fit your preference
-               className="h-full w-auto object-contain drop-shadow-[0_0_60px_rgba(0,243,255,0.25)] scale-[1.35] origin-bottom"
+               className="h-full w-auto object-contain drop-shadow-[0_0_60px_rgba(0,243,255,0.25)] scale-[1.00] origin-bottom"
             />
 
            
