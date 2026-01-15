@@ -6,6 +6,7 @@ import { ProjectCard } from './components/ProjectCard.tsx';
 import { RESEARCH_PROJECTS, TECH_PROJECTS, SKILLS, EDUCATION } from './constants.ts';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { ArrowRight, Mail, FileText, Award, Crosshair } from 'lucide-react';
+import myPhoto from './images/my-photo.png';
 
 const App: React.FC = () => {
   const { scrollY } = useScroll();
@@ -52,7 +53,7 @@ const App: React.FC = () => {
           >
             {/* The image should be a transparent PNG. Using a placeholder here. */}
             <img 
-               src="/images/my-photo.png" 
+               src={myPhoto}
                alt="Sudarshan Vasanthakumar" 
                className="h-full w-auto object-contain drop-shadow-[0_0_60px_rgba(0,243,255,0.25)]"
             />
