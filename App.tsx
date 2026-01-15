@@ -49,7 +49,7 @@ const App: React.FC = () => {
              initial={{ opacity: 0, y: 50 }}
              animate={{ opacity: 1, y: 0 }}
              transition={{ duration: 0.8, delay: 0.2 }}
-             className="col-span-1 lg:col-span-4 flex justify-center items-end h-[60vh] lg:h-[90vh] relative z-10"
+             className="col-span-1 lg:col-span-4 flex justify-center items-end h-[70vh] lg:h-[100vh] relative z-10"
           >
             {/* The image should be a transparent PNG. Using a placeholder here. */}
             <img 
